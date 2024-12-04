@@ -1147,6 +1147,19 @@
           }
         }
       },
+      "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.8.0"
+        }
+      },
+      "Microsoft.jQuery.Unobtrusive.Validation/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.8.0",
+          "jQuery.Validation": "1.8.0.1"
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -3793,6 +3806,32 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
+    "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+      "sha512": "udg7ZBszgqxloQ+ShJRONKQAzPnJIlUhKZB+AIvZdKh7CDc5Nms69T9X0hN5i+NqMmQE6njkzdCcEb16lPdJTw==",
+      "type": "package",
+      "path": "microsoft.jquery.unobtrusive.ajax/3.2.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery.unobtrusive-ajax.js",
+        "Content/Scripts/jquery.unobtrusive-ajax.min.js",
+        "microsoft.jquery.unobtrusive.ajax.3.2.6.nupkg.sha512",
+        "microsoft.jquery.unobtrusive.ajax.nuspec"
+      ]
+    },
+    "Microsoft.jQuery.Unobtrusive.Validation/4.0.0": {
+      "sha512": "RJ1eBcFIwHINVocYtOlmBQd21jGgHOHGe7TLzmQ9VMRMUqAlJoxyCw1AayBkdExqrEZt0Wz9uaZiDX75NHQmSw==",
+      "type": "package",
+      "path": "microsoft.jquery.unobtrusive.validation/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery.validate.unobtrusive.js",
+        "Content/Scripts/jquery.validate.unobtrusive.min.js",
+        "microsoft.jquery.unobtrusive.validation.4.0.0.nupkg.sha512",
+        "microsoft.jquery.unobtrusive.validation.nuspec"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -5083,6 +5122,8 @@
       "Microsoft.EntityFrameworkCore.Relational >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
+      "Microsoft.jQuery.Unobtrusive.Ajax >= 3.2.6",
+      "Microsoft.jQuery.Unobtrusive.Validation >= 4.0.0",
       "bootstrap >= 5.3.3",
       "jQuery >= 3.7.1",
       "jQuery.Validation >= 1.21.0"
@@ -5094,11 +5135,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CoffeCafeDay\\CoffeCafeDay.csproj",
+      "projectUniqueName": "c:\\CoffeCafeDay\\CoffeCafeDay.csproj",
       "projectName": "CoffeCafeDay",
-      "projectPath": "C:\\CoffeCafeDay\\CoffeCafeDay.csproj",
+      "projectPath": "c:\\CoffeCafeDay\\CoffeCafeDay.csproj",
       "packagesPath": "C:\\Users\\saura\\.nuget\\packages\\",
-      "outputPath": "C:\\CoffeCafeDay\\obj\\",
+      "outputPath": "c:\\CoffeCafeDay\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\saura\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5163,6 +5204,14 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.0, )"
+          },
+          "Microsoft.jQuery.Unobtrusive.Ajax": {
+            "target": "Package",
+            "version": "[3.2.6, )"
+          },
+          "Microsoft.jQuery.Unobtrusive.Validation": {
+            "target": "Package",
+            "version": "[4.0.0, )"
           },
           "bootstrap": {
             "target": "Package",
