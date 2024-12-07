@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CoffeCafeDay\\CoffeCafeDay.csproj": {}
+    "c:\\CoffeCafeDay\\CoffeCafeDay.csproj": {}
   },
   "projects": {
-    "C:\\CoffeCafeDay\\CoffeCafeDay.csproj": {
+    "c:\\CoffeCafeDay\\CoffeCafeDay.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CoffeCafeDay\\CoffeCafeDay.csproj",
+        "projectUniqueName": "c:\\CoffeCafeDay\\CoffeCafeDay.csproj",
         "projectName": "CoffeCafeDay",
-        "projectPath": "C:\\CoffeCafeDay\\CoffeCafeDay.csproj",
+        "projectPath": "c:\\CoffeCafeDay\\CoffeCafeDay.csproj",
         "packagesPath": "C:\\Users\\saura\\.nuget\\packages\\",
-        "outputPath": "C:\\CoffeCafeDay\\obj\\",
+        "outputPath": "c:\\CoffeCafeDay\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\saura\\AppData\\Roaming\\NuGet\\NuGet.Config"
