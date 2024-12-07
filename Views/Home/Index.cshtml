@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,10 +11,11 @@
     <title>Coffe Cafe Day</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css"> <!-- fontawesome -->
-    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://unpkg.com/tailwindcss^2/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -19,26 +23,36 @@
 
     <style>
         .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
             left: 0;
             top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
         }
 
         /* Modal Content/Box */
         .modal-content {
             background-color: #fefefe;
-            margin: 15% auto; /* 15% from the top and centered */
+            margin: 15% auto;
+            /* 15% from the top and centered */
             padding: 20px;
             border: 1px solid #888;
             border-radius: 10px !important;
-            width: 40%; /* Could be more or less, depending on screen size */
+            width: 30%;
+            /* Could be more or less, depending on screen size */
         }
 
         .modal-title {
@@ -52,10 +66,11 @@
             position: relative !important;
         }
 
-            .modal-header .btn-close {
-                position: absolute;
-                right: 1rem;
-            }
+        .modal-header .btn-close {
+            position: absolute;
+            right: 1rem;
+        }
+
         /* The Close Button */
         .close {
             color: #aaa;
@@ -94,7 +109,7 @@
             border: 1px solid black;
             padding: 0.5rem 1rem;
             position: relative;
-            left: 225px;
+            left: 125px;
             border-radius: 4px;
             top: 15px;
         }
@@ -108,6 +123,7 @@
             background-color: white;
             color: black;
         }
+
         /* custom-style.css */
 
         .form-control {
@@ -128,15 +144,18 @@
             transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         }
 
-            .form-control:focus {
-                color: #495057;
-                background-color: #fff;
-                border-color: #80bdff;
-                outline: 0;
-                box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-            }
+        .form-control:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #80bdff;
+            outline: 0;
+            text-align: center;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+        }
+
         .center-placeholder::placeholder {
-            text-align: center; /* Center placeholder for most modern browsers */
+            text-align: center;
+            /* Center placeholder for most modern browsers */
         }
     </style>
     <script src="Scripts.js"></script>
@@ -159,8 +178,7 @@
                 </button>
                 <ul class="mb-3 flex flex-col justify-end text-2xl font-normal md:mb-0 md:flex-row">
                     <li class="mb-4 mx-4 inline-block">
-                        <a href="#intro"
-                           class="tm-text-gold py-1 px-4 md:py-3">Overview</a>
+                        <a href="#intro" class="tm-text-gold py-1 px-4 md:py-3">Overview</a>
                     </li>
                     <li class="mb-4 mx-4 inline-block">
                         <a href="#menu" class="tm-text-gold py-1 px-4 md:py-3">Menu</a>
@@ -172,8 +190,7 @@
                         </a>
                     </li>
                     <li class="mb-4 mx-4 inline-block">
-                        <a href="#contact"
-                           class="tm-text-gold py-1 px-4 md:py-3">Contact</a>
+                        <a href="#contact" class="tm-text-gold py-1 px-4 md:py-3">Contact</a>
                     </li>
                     <li class="mb-4 mx-4 inline-block">
                         <a id="login" class="tm-text-gold py-1 px-4 md:py-3">Login</a>
@@ -203,7 +220,7 @@
                 <div class="text-center">
                     <div class="inline-block">
                         <a href="#menu"
-                           class="bg-black py-6 px-8 tm-text-2xl tm-text-gold flex items-center justify-center rounded-lg bg-opacity-70 font-semibold transition hover:text-gray-200">
+                            class="bg-black py-6 px-8 tm-text-2xl tm-text-gold flex items-center justify-center rounded-lg bg-opacity-70 font-semibold transition hover:text-gray-200">
                             <i class="fas fa-coffee mr-3"></i>
                             <span>Let's explore...</span>
                         </a>
@@ -221,18 +238,21 @@
                 <div class="modal-header">
                     <span>
                         <b class="modal-title">Log In or Sign Up</b>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <span class="fa fa-times" aria-hidden="true"></span> </button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <span
+                                class="fa fa-times" aria-hidden="true"></span> </button>
                     </span>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body modal-content-center">
-                    <input type="text" id="textInput"  class="form-control center-placeholder"  />
+                    <form asp-action="PostContactNumber" asp-controller="Home" method="post" class="mb-3">
+                        <input type="text" id="textInput" class="form-control center-placeholder" />
                 </div>
 
                 <!-- Modal footer -->
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-custom" data-bs-dismiss="modal">Submit</button>
+                    <input type="submit" class="btn btn-custom" data-bs-dismiss="modal" value="Submit" />
+                    </form>
                 </div>
 
             </div>
@@ -343,7 +363,7 @@
                     </p>
                 </div>
                 <a href="#contact"
-                   class="tm-bg-green text-white pt-3 pb-4 px-8 inline-block rounded-md text-xl transition">
+                    class="tm-bg-green text-white pt-3 pb-4 px-8 inline-block rounded-md text-xl transition">
                     <i class="far fa-comments mr-4"></i>
                     Contact
                 </a>
@@ -351,7 +371,7 @@
         </div>
     </div>
     <div id="contact" class="parallax-window relative" data-parallax="scroll"
-         data-image-src="images/antique-cafe-bg-04.jpg">
+        data-image-src="images/antique-cafe-bg-04.jpg">
         <div class="tm-container pt-24 pb-48 container mx-auto sm:py-48">
             <div class="flex flex-col items-center justify-around lg:flex-row lg:items-stretch">
                 <div class="px-10 py-12 m-5 bg-white tm-item-container flex-1 rounded-xl bg-opacity-80">
@@ -365,17 +385,16 @@
                     </p>
                     <p class="mb-10 text-lg">
                         <span class="mb-2 block">
-                            Tel: <a href="tel:0100200340"
-                                    class="transition hover:text-yellow-600">+91-9123317556</a>
+                            Tel: <a href="tel:0100200340" class="transition hover:text-yellow-600">+91-9123317556</a>
                         </span>
                         <span class="block">
                             Email: <a href="mailto:info@company.com"
-                                      class="transition hover:text-yellow-600">sauravbhattacharjee967@gmail.com</a>
+                                class="transition hover:text-yellow-600">sauravbhattacharjee967@gmail.com</a>
                         </span>
                     </p>
                     <div class="text-center">
                         <a href="https://www.google.com/maps"
-                           class="text-white pl-10 pr-12 py-6 tm-bg-green inline-block rounded-lg text-2xl transition">
+                            class="text-white pl-10 pr-12 py-6 tm-bg-green inline-block rounded-lg text-2xl transition">
                             <i class="fas fa-map-marked-alt mr-8"></i>
                             Open Maps
                         </a>
@@ -384,14 +403,14 @@
                 <div class="p-12 pb-14 m-5 bg-black tm-item-container flex-1 rounded-xl bg-opacity-50">
                     <form action="" method="POST" class="text-lg">
                         <input type="text" name="name"
-                               class="input bg-black text-white px-0 py-4 mb-4 tm-border-gold w-full border-b bg-opacity-0"
-                               placeholder="Name" required="" />
+                            class="input bg-black text-white px-0 py-4 mb-4 tm-border-gold w-full border-b bg-opacity-0"
+                            placeholder="Name" required="" />
                         <input type="email" name="email"
-                               class="input bg-black text-white px-0 py-4 mb-4 tm-border-gold w-full border-b bg-opacity-0"
-                               placeholder="Email" required="" />
+                            class="input bg-black text-white px-0 py-4 mb-4 tm-border-gold w-full border-b bg-opacity-0"
+                            placeholder="Email" required="" />
                         <textarea rows="6" name="message"
-                                  class="input bg-black text-white px-0 py-4 mb-4 tm-border-gold w-full border-b bg-opacity-0"
-                                  placeholder="Message..." required=""></textarea>
+                            class="input bg-black text-white px-0 py-4 mb-4 tm-border-gold w-full border-b bg-opacity-0"
+                            placeholder="Message..." required=""></textarea>
                         <div class="text-right">
                             <button type="submit" class="text-white transition hover:text-yellow-500">Send it</button>
                         </div>
@@ -399,7 +418,8 @@
                 </div>
             </div>
             <footer class="bottom-0 left-0 absolute w-full">
-                <div class="text-white tm-container p-8 container mx-auto flex flex-col justify-between text-lg md:flex-row">
+                <div
+                    class="text-white tm-container p-8 container mx-auto flex flex-col justify-between text-lg md:flex-row">
                     <div class="legal-menu-brand-copyright">
                         <small>
                             <p>Renaissance Technologies.</p>
