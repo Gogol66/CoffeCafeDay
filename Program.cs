@@ -1,3 +1,4 @@
+using CoffeCafeDay.Models;
 using Microsoft.EntityFrameworkCore;
 namespace CoffeCafeDay
 {
@@ -29,5 +30,10 @@ namespace CoffeCafeDay
             app.Run();
 
         }
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddSingleton<SMSService>(new SMSService("your_account_sid", "your_auth_token"));
+        }
+
     }
 }

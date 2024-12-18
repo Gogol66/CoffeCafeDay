@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CoffeCafeDay
+namespace CoffeCafeDay.Models
 {
     public class Customers
     {

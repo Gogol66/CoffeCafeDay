@@ -1,15 +1,6 @@
-﻿<<<<<<< Tabnine <<<<<<<
-@{
+﻿@{
     Layout = null;//-
-}//-
-    ViewData["Title"] = "Home Page";//+
-}//+
-//+
-<form asp-controller="Home" asp-action="PostContactNumber" method="post">//+
-    <input type="text" name="contactNumber" placeholder="Enter contact number" />//+
-    <button type="submit">Submit</button>//+
-</form>//+
->>>>>>> Tabnine >>>>>>>// {"source":"chat"}
+}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -255,7 +246,8 @@
                 <!-- Modal body -->
                 <div class="modal-body modal-content-center">
                     <form action="/Home/PostContactNumber" method="post" class="mb-3">
-                        <input type="text" id="textInput" class="form-control center-placeholder" />
+                        <input type="text" id="textInput" name="textInput" class="form-control center-placeholder"
+                            required />
                 </div>
 
                 <!-- Modal footer -->

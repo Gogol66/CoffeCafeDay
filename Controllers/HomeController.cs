@@ -9,9 +9,10 @@ namespace CoffeCafeDay.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult PostContactNumber(string contactNumber)
+        public ActionResult PostContactNumber(string textInput)
         {
-            return View();
+            ViewBag.ReceivedString = textInput;
+            return RedirectToAction("Index", "Home");
         }
 
     }
